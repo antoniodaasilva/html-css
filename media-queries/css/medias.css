@@ -1,17 +1,41 @@
-@media screen and (min-width: 768px) {
-  #burguer {
-    display: none;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  section#login {
+    width: 80vw;
   }
 
-  nav {
-    display: block;
+  section#login > div#img {
+    float: left;
+    width: 30%;
+    height: 100%;
   }
 
-  nav > ul > li > a {
-    display: inline-block;
+  #form {
+    float: right;
+    width: 70%;
   }
+}
 
-  main {
-    width: 768px;
-  }
+@media screen and (min-width: 992px) {
+    section#login {
+      width: 990px;
+    }
+  
+    #img {
+      float: left;
+      width: 50%;
+      height: 100%;
+    }
+  
+    #form {
+      float: right;
+      width: 50%;
+    }
+
+    div#form > h1 {
+      font-size: 2em;
+    }
+
+    div#form > p {
+      font-size: 1.2em;
+    }
 }

@@ -1,76 +1,124 @@
 * {
-  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
-body {
-  background: lightgray;
-}
-
-header {
-  background: gray;
-
-}
-
-
-header > h1 {
-  padding: 10px;
-  text-align: center;
-}
-
-#burguer {
+body, html {
+  background: #5f2c82;
   width: 100vw;
-  display: block;
-  text-align: center;
-  background: rgb(46, 46, 46);
-  color: #fff;
-}
-
-#burguer:hover {
-  background-color: rgb(230, 224, 224);
-  color: black;
-  cursor: pointer;
-}
-
-nav {
-  display: none;
-}
-
-nav > ul {
-  list-style: none;
-}
-
-nav > ul > li > a  {
-  padding: 10px;
-  display: block;
-  background-color: rgb(87, 87, 87);
-  color: white;
-  text-align: center;
-  border: 2px solid rgb(102, 102, 102);
-}
-
-nav > ul > li > a:hover {
-  background-color: gray;
+  height: 100vh;
 }
 
 main {
-  width: 90vw;
-  background-color: #fff;
-  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#login {
+  background: #fff;
+  width: 250px;
+  height: 515px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.37);
+
+  transition: width .3s, height .3s;
+}
+
+#img {
+  background: #5f2c82 url('../predio.jpg') left bottom no-repeat;
+  height: 200px;
+  background-size: cover;
+  display: block;
+}
+
+#form {
   padding: 10px;
-  border-radius: 10px;
-  margin-top: 10px;
+  display: block;
 }
 
-article > h2 {
-  padding-bottom: 10px;
+.input {
+  background: #5f2c82;
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  margin: 5px 0;
 }
 
-article > p {
-  text-align: justify;
-  margin-bottom: 10px;
-  text-indent: 20px;
+.input .material-symbols-outlined {
+  font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 0;
+  color: #fff;
+  font-size: 2em;
+  margin: 0;
+  width: 40px;
+  padding: 5px;
+}
+
+
+input {
+  background: transparent;
+  border: none;
+  height: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  width: calc(100% - 45px);
+  transform: translateY(-2px);
+}
+
+form label {
+  display: none;
+}
+
+input[type=submit] {
+  display: block;
+  width: 100%;
+  background: #49a09d;
+  height: 40px;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background: #428d8c;
+  cursor: pointer;
+}
+
+form > a.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background: #4fdbd9;
+  border-radius: 5px;
+  border: 1px solid #428d8c;
+  margin-top: 5px;
+}
+
+a > .material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 900,
+    'GRAD' 1,
+    'opsz' 48;
+  font-size: 20px;
+    
 }
